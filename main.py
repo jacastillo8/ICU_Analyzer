@@ -11,7 +11,7 @@ sys.path.append('./lib')
 from lib.medframes import ExperimentFrame
 
 if __name__ == '__main__':  
-    original = pd.read_csv('data.csv')
+    original = pd.read_csv('./data/data.csv')
     experiment = ExperimentFrame(original)
     # Retrieves data with non-empty clinical user field
     clinic_frame = experiment.get_clinic()
